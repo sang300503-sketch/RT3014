@@ -1,0 +1,32 @@
+AutoShop
+	2
+PROG
+ROOT
+	FILE	MAIN.LD
+	FILE	SBR_alarm.LD
+	FILE	SBR_AUTO.LD
+	FILE	SBR_CYLINDER.LD
+	FILE	SBR_HMI_IO_STATUS.LD
+	FILE	SBR_Inverter.LD
+	FILE	SBR_SETTING.LD
+	FILE	SBR_STEP.LD
+	FOLDER	MANUAL
+		FILE	SBR_MANUAL.LD
+VAR
+ROOT
+	STRUROOT	Structure
+		FILE	Axis_Control_Stru.stru
+		FILE	Axis_Status_Stru.stru
+		FILE	Axis_Stru.stru
+		FILE	Coil_Cylinder.stru
+	ENUMROOT	Enumeration
+	FILE	VarList.gdt
+	FILE	FunctionBlockInstances.fbi
+	FILE	Variable_Table.gvt
+FB
+ROOT
+	FILE	FB_Coil.FB
+	FILE	FB_Step.FB
+	FILE	home_DINH_VI.FB
+FC
+ROOT
